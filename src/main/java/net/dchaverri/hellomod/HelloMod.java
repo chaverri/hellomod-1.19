@@ -1,6 +1,7 @@
 package net.dchaverri.hellomod;
 
 import com.mojang.logging.LogUtils;
+import net.dchaverri.hellomod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,6 +24,7 @@ public class HelloMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
