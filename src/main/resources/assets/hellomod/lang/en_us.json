@@ -1,5 +1,8 @@
 {
-  "item.hellomod.rupee": "RUPY",
-  "item.hellomod.koin": "KOIN",
-  "itemGroup.currencytab": "SHOW ME THE"
+  "item.hellomod.rupee": "Rupy",
+  "item.hellomod.koin": "Koin",
+  "itemGroup.hellomod_tab": "Hello Mod!",
+
+  "block.hellomod.question_block": "Huh?",
+  "block.hellomod.exclamation_block": "Ooh!"
 }

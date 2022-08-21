@@ -9,15 +9,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import static net.dchaverri.hellomod.tab.ModTabs.HELLO_MOD_TAB;
+
 public class ModItems {
   public static DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, HelloMod.MOD_ID);
 
-  public static final CreativeModeTab HELLO_MOD_TAB = new CreativeModeTab("currencytab") {
-    @Override
-    public ItemStack makeIcon() {
-      return new ItemStack(KOIN.get());
-    }
-  };
 
   public static final RegistryObject<Item> RUPEE = ITEMS.register("rupee",
           () -> new Item(new Item.Properties().tab(HELLO_MOD_TAB)));
