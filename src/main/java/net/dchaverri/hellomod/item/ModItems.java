@@ -1,9 +1,7 @@
 package net.dchaverri.hellomod.item;
 
 import net.dchaverri.hellomod.HelloMod;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,6 +18,9 @@ public class ModItems {
 
   public static final RegistryObject<Item> KOIN = ITEMS.register("koin",
           () -> new Item(new Item.Properties().tab(HELLO_MOD_TAB)));
+
+  public static final RegistryObject<Item> NOT_ALONE_SWORD = ITEMS.register("notalonesword",
+          () -> new SwordItem(Tiers.DIAMOND,10, 5f, new Item.Properties().tab(HELLO_MOD_TAB)));
 
   public static void register(IEventBus eventBus) {
     ITEMS.register(eventBus);

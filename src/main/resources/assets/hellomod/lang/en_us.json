@@ -1,6 +1,7 @@
 {
   "item.hellomod.rupee": "Rupy",
   "item.hellomod.koin": "Koin",
+  "item.hellomod.notalonesword": "Not Alone Sword",
   "itemGroup.hellomod_tab": "Hello Mod!",
 
   "block.hellomod.question_block": "Huh?",
